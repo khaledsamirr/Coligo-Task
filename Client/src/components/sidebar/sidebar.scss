@@ -1,0 +1,68 @@
+@import"../../styles/responsive.scss";
+
+.sidebar{
+    background: linear-gradient(#61c1b8,navy); ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    gap:30px;
+    flex-direction: column;
+    h1{
+        margin-top: 30px;
+        padding: 10px;
+        @include respond(phone){
+            font-size: 12px;
+        }
+    }
+    .menu{
+        width: 100%;
+                
+        .sidebarlist{
+            
+            display: flex;
+            flex-direction: column;
+                
+                li{
+                    
+                    .label{
+                        @include respond(phone){
+                            display: none;
+                    }
+                }
+                
+                @include respond(phone){
+                    padding: 5px 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                padding: 10px 30px;
+                display: flex;
+                height:50px;
+                align-items: center;
+                
+                color:white;
+                gap: 20px;
+                font-weight: 600;
+                font-family: 'Poppins',sans-serif;
+                &#active{
+                    background-color: white;
+                    color:#61c1b8;
+                    cursor:pointer;
+                }
+                &:hover{
+                    cursor:pointer;
+                    background-color: white;
+                    color:#61c1b8;
+                    
+            }
+        
+          
+      
+
+        }
+    }
+    
+}
+}

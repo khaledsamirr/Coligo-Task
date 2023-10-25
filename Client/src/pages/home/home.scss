@@ -1,0 +1,73 @@
+@import "../../styles/responsive.scss";
+.home{
+    height:100vh;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card{
+        width: 50%;
+        display: flex;
+        
+        border-radius: 10px;
+        min-height: 600px;
+        overflow: hidden;
+        @include respond(phone){
+            flex-direction: column;
+        };
+        @include respond(tab-port){
+            flex-direction: column;
+        };
+        .left{
+            flex:1;
+            background:linear-gradient(#61c1b8,navy);    
+            background-size: cover;
+            padding:50px;
+            display: flex;
+            flex-direction: column;
+            gap:30px;
+            color:white;
+            @include respond(phone){
+                align-items: center;
+            };
+            @include respond(tab-port){
+                align-items: center;
+            };
+
+            justify-content: center;
+                h1{
+             
+                color: white;
+                }
+                p{
+                    color:whitesmoke
+                }
+        }
+
+        .right{
+            flex:1;
+            display: flex;
+            background-color: #fff;
+            flex-direction: column;
+            padding: 50px;
+            gap:50px;
+            justify-content: center;
+
+            @include respond(phone){
+                align-items: center;
+            };
+            @include respond(tab-port){
+                align-items: center;
+            };
+
+            h1{
+                color: rgb(37, 37, 39);
+                
+            }
+            button{
+            
+            }
+        }
+
+    }
+}

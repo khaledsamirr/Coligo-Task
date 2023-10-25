@@ -1,0 +1,98 @@
+@import "./styles/responsive.scss";
+
+*,
+*::after,
+*::before{
+    padding:0;
+    margin:0;
+    box-sizing:inherit;
+    outline:0;
+    text-decoration: 0;
+    list-style: none;
+}
+
+body{
+    color: #212123;
+    background-color: whitesmoke ;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7em;
+}
+
+
+button{
+    display: inline-block;
+    outline: none;
+    border:none;
+    background:none;
+}
+
+h1{
+    color:white;
+    letter-spacing: -1.7px;
+    font-family: "Poppins",sans-serif;
+    font-family: 70px;
+    font-weight:700;
+    line-height:1.1;
+    margin-bottom: 10px;
+
+    @include respond(tab-port){
+        font-size: 25px;
+    }
+    
+}
+
+h4{
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1em;
+
+    @include respond(tab-port){
+        font-size: 25px;
+    }
+}
+
+
+
+h6{
+    color: #110d34;
+    margin-bottom: 10px;
+    font-family: 'Poppins',sans-serif;
+    line-height: 1.1em;
+
+}
+
+.button-primary{
+    color:white;
+    text-align: center;
+    background-color: #61c1b8;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.button-outline{
+    color:#61c1b8;
+    text-align: center;
+    background-color: transparent;
+    border:3px solid #61c1b8;
+
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3 ease-in-out;
+
+}
+
+
+
+
+

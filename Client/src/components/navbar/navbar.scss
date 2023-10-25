@@ -1,0 +1,106 @@
+@import"../../styles/responsive.scss";
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    height: 10vh;
+    background-color: white;
+    
+    .navleft{
+        h1{
+         
+            color:rgb(56, 56, 56);
+        }
+    }
+    .navright{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        .search{
+            margin-right: 20px;
+            border: 1px solid lightgray;
+            border-radius: 50px;  
+            width:200px;
+            @include respond(phone){
+              display: none;
+            }
+            @include respond(tab-port){
+               max-width: 120px;
+       
+            }
+            height: 35px;
+            color: lightgray;  
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            padding: 5px;
+            input{
+                border: none;
+                background: transparent;
+                width: 40%;
+                margin-left: 5px;
+               
+            }
+        }
+        .icon{
+            cursor: pointer;
+            position: relative;
+            .counter{
+                top:0;
+                left: 16px;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width:15px;
+                height: 15px;
+                background-color: navy;
+                color: white;
+                border-radius: 50%;
+                font-size:12px;
+                align-items: center;
+                border: 2px solid white;
+            }   
+        }
+    
+        .user{
+            position: relative;
+            img{
+                width: 30px;
+                height:30px;
+                
+                border-radius: 50%;
+                object-fit:cover;
+            }
+            .dropdown{
+                background-color: whitesmoke;
+                padding: 1px;
+                width:60px;
+                text-align: center;
+                height: 10px;
+                position: absolute;
+                left: -14px;
+                top:24px;
+                font-size: 12px;
+                font-weight: 500;
+                ul{
+                    border-radius: 10px; 
+                    li{
+                        padding:4px;
+                        cursor: pointer;
+                        
+                    }
+                    &:hover{
+                        background-color:#61c1b8;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.announcement{
+    display: flex;
+    gap: 40px;
+
+    line-height: 1rem;
+    img{
+        width: 32px;
+        height: 32px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .info{
+        width: 15%;
+        margin-right: 10px;
+        line-height: 0.8rem;
+        h6{
+            font-size: 12px;
+            color: gray;
+        }
+
+    }
+    p{
+        color: gray;
+        width: 100%;
+        font-size: 12px;
+        line-height: 1.2 rem;
+    }
+
+}

@@ -1,0 +1,44 @@
+@import "../../styles/responsive.scss";
+
+
+.dashboard{
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    .left{
+        display: flex;
+        flex:1;
+ 
+    }
+    .right{
+        @include respond(phone){
+            max-width: 37.5em;
+        }
+       
+        display: flex;
+        
+        flex:6;
+        
+        .bottom{
+            display: flex;
+            @include respond(phone){
+                flex-direction: column;
+            }
+            
+            
+            .announcement{
+                flex:3;
+            }
+            .righbar{
+                display: flex;
+                flex:1;
+            }
+        }
+    }
+}
+
+.left{
+    flex:1;
+}
