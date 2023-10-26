@@ -3,10 +3,7 @@
 
  //Media Query
 
- // 0-600px: : phone  (phone)
- // 600-900px: Tablet Portrait (tab-port)
- // 900-1200px: Tablet Landscape (tab-land)
- // 1200-1800px: Desktop 
+
 
  @mixin respond($breakpoint){
     @if $breakpoint==phone{
